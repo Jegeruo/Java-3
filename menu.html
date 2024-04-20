@@ -1,256 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MENU ITEMS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <style>
-        body{
-                font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-                text-transform: capitalize;
-            }
-            h2{
-                text-align: center;
-            }
-            .underline{
-                text-align: center;
-                color: black;
-                width: 0.5rem;
-                font-size: 0.5rem;
-            }
-            img{
-                width: 10rem;
-            }
-            .btn{
-                color: black;
-                margin-left: 1rem;
-            }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MENU ITEMS</title>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<style>
+body{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-transform: capitalize;
+}
+h2{
+text-align: center;
+}
+.underline{
+text-align: center;
+color: black;
+width: 0.5rem;
+font-size: 0.5rem;
+}
+img{
+width: 10rem;
+}
+.btn{
+color: black;
+margin-left: 1rem;
+}
+</style>
 </head>
 <body>
-    <section class="container-fluid">
-        <!-- title -->
-        <div class="title">
-            <h2>our menu</h2>
-            <div class="underline"></div>
-        </div>
+<section class="container-fluid">
+<!-- title -->
+<div class="title">
+<h2>our menu</h2>
+<div class="underline"></div>
+</div>
 
-        <!-- filter buttons -->
-        <div class="d-flex justify-content-center p-4 btn-container">
-            <button class="btn btn-outline-success filter-btn" data-id="all">All</button>
-            <button class="btn btn-outline-success filter-btn" data-id="brakefast">Breakfast</button>
-            <button class="btn btn-outline-success filter-btn" data-id="lunch">Lunch</button>
-            <button class="btn btn-outline-success filter-btn" data-id="dinner">Dinner</button>
-        </div>
+<!-- filter buttons -->
+<div class="d-flex justify-content-center p-4 btn-container">
+<button class="btn btn-outline-success filter-btn" data-id="all">All</button>
+<button class="btn btn-outline-success filter-btn" data-id="brakefast">Breakfast</button>
+<button class="btn btn-outline-success filter-btn" data-id="lunch">Lunch</button>
+<button class="btn btn-outline-success filter-btn" data-id="dinner">Dinner</button>
+</div>
 
-        <!-- menu items -->
-        <div class="row justify-content-around mt-5 js-menu-container section-center">
-            <!-- single item -->
-            <article class="mb-3 col-md-6" style="max-width: 540px;">
-                <div class="row g-0 justify-content-between">
-                  <div class="col-md-5 pe-3">
-                    <img src="./image/Akara.jpg" style="width: 100%; height: 150px;" class="img-fluid rounded-start" alt="...">
-                  </div>
-                  <div class="col-md-7">
-                    <div class="">
-                       <div class=" d-flex justify-content-between">
-                        <h4 >Akara and pap</h4>
-                        <h5 class="price">=N=1,100.</h5>
-                      </div>
-                      <p class="item-text"><b>Akara</b> and <b>Pap.</b> Bean cake, called “akara” locally in Nigeria,
-                        is made from fried beans paste. Most of the time, it is not prepared at home 
-                        alone. The akara and pap is a delicacy gotten from street vendors but it is 
-                        also an easy-to-go recipe that you can make from the comfort of your home.
-                        <br> You could buy it...</p>
-                    </div>
-                  </div>
-                </div>
-            </article>
-            <!-- end of the single item -->
-        </div>
-
-
-    </section>
-
-        <script>
-        const menu = [
-            {id: 1,
-            img: './image/Vegetable Soup.jpg',
-            title: 'Vegetable Soup.',
-            price: '=N=6,500.',
-            category: 'lunch',
-            info: 'Just like Egusi Soup, Vegetable soup is one of the favorite and an expensive \
-                    soup used to serve swallow. The recipe is majorly of leaves like fluted-popkin, \
-                    letuce, etc.',
-                },
-
-            {id: 2,
-            img: './image/Beef Stew.jpg',
-            title: 'Beef Stew.',
-            price: '=N=5,000.',
-            category: 'lunch',
-            info: 'Beef Stew. This stew consists of tenderly cooked beef soaked in a delicious \
-                    broth. Furthermore, this pot of red stew is nutritious and rich. You can serve \
-                    A tomato-based beef stew with rice or starchy(Swallow).',
-                },
-
-            {id: 3,
-            img: './image/Jellof Rice.jpg',
-            title: 'Jollof/Fried Rice.',
-            price: '=N=3,500',
-            category: 'lunch',
-            info: 'ollof, or jollof rice, is a rice dish from West Africa. The dish is typically \
-                    made with long-grain rice, tomatoes, chilies, onions, spices, and sometimes \
-                    other vegetables and/or meat in a single pot, although its ingredients and \
-                    preparation methods vary across different regions, The popular jollof rice \
-                    is a classic recipe that makes it to almost all special occasions in Nigeria. \
-                    It is a rich, tasty, and elegant meal ...',
-                },
+<!-- menu items -->
+<div class="row justify-content-around mt-5 section-center">
+<!-- single item -->
+<article class="mb-3 col-md-6" style="max-width: 540px;">
+<div class="row g-0 justify-content-between">
+<div class="col-md-5 pe-3">
+	<img src="./image/Akara.jpg" style="width: 100%; height: 150px;" class="img-fluid rounded-start" alt="...">
+</div>
+<div class="col-md-7">
+	<div class="">
+			<div class=" d-flex justify-content-between">
+			<h4 >Akara and pap</h4>
+			<h5 class="price">=N=1,100.</h5>
+		</div>
+		<p class="item-text"><b>Akara</b> and <b>Pap.</b> Bean cake, called “akara” locally in Nigeria,
+			is made from fried beans paste. Most of the time, it is not prepared at home 
+			alone. The akara and pap is a delicacy gotten from street vendors but it is 
+			also an easy-to-go recipe that you can make from the comfort of your home.
+			<br> You could buy it...</p>
+	</div>
+</div>
+</div>
+</article>
+<!-- end of the single item -->
+</div>
 
 
-            {id: 4,
-            img: './image/Akara.jpg',
-            title: 'Akara and pap',
-            price: '=N=1,100',
-            category: 'brakefast',
-            info: '<b>Akara</b> and <b>Pap.</b> Bean cake, called “akara” locally in Nigeria \
-                         is made from fried beans paste. Most of the time, it is not prepared at home \
-                         alone. The akara and pap is a delicacy gotten from street vendors but it is \
-                         also an easy-to-go recipe that you can make from the comfort of your home.\
-                         <br> You could buy it...',
-                },
+</section>
 
-            {id: 5,
-            img: './image/Bread Sandwich.jpg',
-            title: 'Bread Sandwich',
-            price: '=N=2,300',
-            category: 'brakefast',
-            info: 'Bread sandwich with a hot beverage. Also known as tea and bread,\
-                      this is the most common breakfast in Nigeria.\
-                       Loved by adults and children, your breakfast is always fantastic.\
-                        The ever-present <b>Bread</b> and \'tea\' works for me better \
-                        than fried egg and bread but thanks for all the Nigerian breakfast recipes.\
-                       In most homes, this is the go-to... ',
-                },
+<script>
+const menu = [
+{id: 1,
+img: './image/Vegetable Soup.jpg',
+title: 'Vegetable Soup.',
+price: '=N=6,500.',
+category: 'lunch',
+info: 'Just like Egusi Soup, Vegetable soup is one of the favorite and an expensive \
+	soup used to serve swallow. The recipe is majorly of leaves like fluted-popkin, \
+	letuce, etc.',
+},
 
-            
-            {id: 6,
-            img: './image/Egusi Soup.jpg',
-            title: 'Egusi Soup',
-            price: '=N=6,000.',
-            category: 'lunch',
-            info: 'Egusi Soup (Ground Melon Vegetable Soup). If you\'re looking for something to \
-                    warm your soul and fill your stomach, this soup is the dish for you. It\'s a one \
-                    prepared from processed melon seeds, and ingredients such as stockfish, red oil, \
-                    meat, vegetables, seafood, onions, and other condiments. Egusi soup with fufu is \
-                    considered by many to be a Nigerian national dish.',
-                },
+{id: 2,
+img: './image/Beef Stew.jpg',
+title: 'Beef Stew.',
+price: '=N=5,000.',
+category: 'lunch',
+info: 'Beef Stew. This stew consists of tenderly cooked beef soaked in a delicious \
+	broth. Furthermore, this pot of red stew is nutritious and rich. You can serve \
+	A tomato-based beef stew with rice or starchy(Swallow).',
+},
 
-            {id: 7,
-            img: './image/Pepper Soup.jpg',
-            title: 'Pepper soup',
-            price: '=N=5,500.',
-            category: 'dinner',
-            info: 'Pepper soup is also a very popular delicacy eaten in almost every part of the \
-                    country. It\'s usually packed with beef, chicken, mutton, or fresh fish. \
-                    Depending on the dish that is prepared, it can cure colds and boost immunity, \
-                    it\'s considered at night because people believe that light meal is meant for \
-                    night. If you\'re craving more spicy dishes, give Nigerian pepper soup a \
-                    try. But don\'t complain if you can\'t feel your tongue for a few hours! ',
-                },
-
-            {id: 8,
-            img: './image/Vegetable Salad.jpg',
-            title: 'Vegetable soup',
-            price: '=N=4,500.',
-            category: 'dinner',
-            info: 'This vegetable soup/salad recipe is so flavorful and easy to make! It\'s packed \
-                    with veggies like carrots, sweet potatoes, tomatoes, green beans, and more. \
-                    It\'s easy to make, and full of healthy vegetables and fresh flavor. \
-                    There\'s nothing "blah" about it!',
-                },
-            
-            {id: 9,
-            img: './image/Fruit Salad.jpg',
-            title: 'Fruit salad',
-            price: '=N=,4,600.',
-            category: 'dinner',
-            info: 'Fruit salad is a dish consisting of various kinds of fruit, sometimes served \
-                    in a liquid, either their juices or a syrup. In different forms, fruit salad \
-                    can be served as an appetizer or a side as a salad. A fruit salad is sometimes \
-                    known as a fruit cocktail, or fruit cup. Delicious, creamy, and oh, so sweet! \
-                    This creamy fruit salad recipe combines perfectly with its...',
-                },
-           
-
-            // {id = 10,
-            // img = '',
-            // title = '',
-            // price = '',
-            // info = '',},
-            
-        ]
-     
-       const sectionCenter = document.querySelector('.section-center');
-
-       const filterBtns = document.querySelectorAll('.filter-btn');
-
-    //  load items  
-       window.addEventListener('DOMContentLoaded', function() {
-        displayMenuItem(menu)
-       });
-
-    // filter items
-    filterBtns.forEach((btn) => {
-        btn.addEventListener('click', (e) => {
-            const category = e.currentTarget.dataset.id;
-            const menuCategory = menu.filter((menuItem) => {
-            
-                if (menuItem.category === category){
-                    return menuItem;
-                }
-    
-            });
-            if (category === 'all'){
-                displayMenuItem(menu)
-            }else {
-                displayMenuItem(menuCategory)
-            }
-        });
-            
-    });
+{id: 3,
+img: './image/Jellof Rice.jpg',
+title: 'Jollof/Fried Rice.',
+price: '=N=3,500',
+category: 'lunch',
+info: 'ollof, or jollof rice, is a rice dish from West Africa. The dish is typically \
+	made with long-grain rice, tomatoes, chilies, onions, spices, and sometimes \
+	other vegetables and/or meat in a single pot, although its ingredients and \
+	preparation methods vary across different regions, The popular jollof rice \
+	is a classic recipe that makes it to almost all special occasions in Nigeria. \
+	It is a rich, tasty, and elegant meal ...',
+},
 
 
+{id: 4,
+img: './image/Akara.jpg',
+title: 'Akara and pap',
+price: '=N=1,100',
+category: 'brakefast',
+info: '<b>Akara</b> and <b>Pap.</b> Bean cake, called “akara” locally in Nigeria \
+				is made from fried beans paste. Most of the time, it is not prepared at home \
+				alone. The akara and pap is a delicacy gotten from street vendors but it is \
+				also an easy-to-go recipe that you can make from the comfort of your home.\
+				<br> You could buy it...',
+},
 
-       function displayMenuItem(menuItems){
-        let displayMenu = menuItems.map((item) =>{
-
-        return `
-                <article class="mb-3 col-md-6" style="max-width: 540px;">
-                    <div class="row g-0 justify-content-between">
-                    <div class="col-md-5 pe-3">
-                        <img src="${item.img}" style="width: 100%; height: 150px;" class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-7">
-                        <div class="">
-                        <div class=" d-flex justify-content-between">
-                            <h4 >${item.title}</h4>
-                            <h5 class="price">${item.price}.</h5>
-                        </div>
-                        <p class="item-text">${item.info}</p>
-                        </div>
-                    </div>
-                    </div>
-                </article>`;
-        });
-        displayMenu = displayMenu.join('');
-        sectionCenter.innerHTML = displayMenu;
-       }
+{id: 5,
+img: './image/Bread Sandwich.jpg',
+title: 'Bread Sandwich',
+price: '=N=2,300',
+category: 'brakefast',
+info: 'Bread sandwich with a hot beverage. Also known as tea and bread,\
+		this is the most common breakfast in Nigeria.\
+			Loved by adults and children, your breakfast is always fantastic.\
+			The ever-present <b>Bread</b> and \'tea\' works for me better \
+			than fried egg and bread but thanks for all the Nigerian breakfast recipes.\
+			In most homes, this is the go-to... ',
+},
 
 
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+{id: 6,
+img: './image/Egusi Soup.jpg',
+title: 'Egusi Soup',
+price: '=N=6,000.',
+category: 'lunch',
+info: 'Egusi Soup (Ground Melon Vegetable Soup). If you\'re looking for something to \
+	warm your soul and fill your stomach, this soup is the dish for you. It\'s a one \
+	prepared from processed melon seeds, and ingredients such as stockfish, red oil, \
+	meat, vegetables, seafood, onions, and other condiments. Egusi soup with fufu is \
+	considered by many to be a Nigerian national dish.',
+},
+
+{id: 7,
+img: './image/Pepper Soup.jpg',
+title: 'Pepper soup',
+price: '=N=5,500.',
+category: 'dinner',
+info: 'Pepper soup is also a very popular delicacy eaten in almost every part of the \
+	country. It\'s usually packed with beef, chicken, mutton, or fresh fish. \
+	Depending on the dish that is prepared, it can cure colds and boost immunity, \
+	it\'s considered at night because people believe that light meal is meant for \
+	night. If you\'re craving more spicy dishes, give Nigerian pepper soup a \
+	try. But don\'t complain if you can\'t feel your tongue for a few hours! ',
+},
+
+{id: 8,
+img: './image/Vegetable Salad.jpg',
+title: 'Vegetable soup',
+price: '=N=4,500.',
+category: 'dinner',
+info: 'This vegetable soup/salad recipe is so flavorful and easy to make! It\'s packed \
+	with veggies like carrots, sweet potatoes, tomatoes, green beans, and more. \
+	It\'s easy to make, and full of healthy vegetables and fresh flavor. \
+	There\'s nothing "blah" about it!',
+},
+
+{id: 9,
+img: './image/Fruit Salad.jpg',
+title: 'Fruit salad',
+price: '=N=,4,600.',
+category: 'dinner',
+info: 'Fruit salad is a dish consisting of various kinds of fruit, sometimes served \
+	in a liquid, either their juices or a syrup. In different forms, fruit salad \
+	can be served as an appetizer or a side as a salad. A fruit salad is sometimes \
+	known as a fruit cocktail, or fruit cup. Delicious, creamy, and oh, so sweet! \
+	This creamy fruit salad recipe combines perfectly with its...',
+},
+
+
+// {id = 10,
+// img = '',
+// title = '',
+// price = '',
+// info = '',},
+
+]
+
+const sectionCenter = document.querySelector('.section-center');
+
+const filterBtns = document.querySelectorAll('.filter-btn');
+
+//  load items  
+window.addEventListener('DOMContentLoaded', function() {
+displayMenuItem(menu)
+});
+
+// filter items
+filterBtns.forEach((btn) => {
+btn.addEventListener('click', (e) => {
+const category = e.currentTarget.dataset.id;
+const menuCategory = menu.filter((menuItem) => {
+
+if (menuItem.category === category){
+	return menuItem;
+}
+
+});
+if (category === 'all'){
+displayMenuItem(menu)
+}else {
+displayMenuItem(menuCategory)
+}
+});
+
+});
+
+
+
+function displayMenuItem(menuItems){
+let displayMenu = menuItems.map((item) =>{
+
+return `
+<article class="mb-3 col-md-6" style="max-width: 540px;">
+	<div class="row g-0 justify-content-between">
+	<div class="col-md-5 pe-3">
+			<img src="${item.img}" style="width: 100%; height: 150px;" class="img-fluid rounded-start" alt="...">
+	</div>
+	<div class="col-md-7">
+			<div class="">
+			<div class=" d-flex justify-content-between">
+					<h4 >${item.title}</h4>
+					<h5 class="price">${item.price}.</h5>
+			</div>
+			<p class="item-text">${item.info}</p>
+			</div>
+	</div>
+	</div>
+</article>`;
+});
+displayMenu = displayMenu.join('');
+sectionCenter.innerHTML = displayMenu;
+}
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
 </body>
 </html>
-      
+
